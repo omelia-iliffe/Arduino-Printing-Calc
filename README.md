@@ -9,7 +9,7 @@ A quick teardown and hack of the Casio Printing Calculator hr-8l
 
 
 Lessons learnt when repurposing/upgrading old tech
-======
+--------
 
 ## Step One: Choose a product
 When choosing a product there is a number of things to consider
