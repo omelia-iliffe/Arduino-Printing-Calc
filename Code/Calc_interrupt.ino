@@ -2,7 +2,7 @@
 #define triggerPin 8
 #define motorPin 9
 
-const int sensorPin[] = {2, 11, 3};
+const int sensorPin[] = {2, 3}; //(dailpin, 14 segment dail pin)
 const int led = 13;
 
 
@@ -16,7 +16,7 @@ long triggerTime = 0;
 int lineCount = 0;
 int charCount = 0;
 int loopCount = 0;
-int readPin = 2;
+int readPin = 1;
 
 String disk1 = "E+x/^*STMC= -%";
 String disk2 = "#0123456789-,.";
@@ -63,7 +63,7 @@ void printStr(String str, bool printLine) {
 
 void printChar(String str, bool printLine) {
   int goal;
-  if (charCount == 0) {                   //checks which disk we are using 
+  if (charCount == 0) {                   //checks which disk we are using
     goal = disk1.indexOf(str);            //checks validity of char its trying to print
     if (goal == -1) {
       Serial.println("FAILED TO FIND CHAR ON DISK1: " + str);
@@ -77,10 +77,10 @@ void printChar(String str, bool printLine) {
     }
   }
   toggleMotor(); //turn on
-  wait(1); //wait for dial reset
+  wait(0); //wait for dial reset
   sensorCount[readPin] = 0; // dial count reset
   bool complete = false;
-  
+
 
 
   while (!complete) {
@@ -125,4 +125,3 @@ void toggleMotor() {
     digitalWrite(motorPin, LOW);
   }
 }
-

@@ -1,3 +1,9 @@
+
+
+
+[breadboard1]:Docs/img/breadboard.png "breadboard1"
+
+
 # Arduino-Printing-Calc
 A quick teardown and hack of the Casio Printing Calculator hr-8l
 
@@ -67,12 +73,15 @@ Finally the most puzzling pins on the ribbon cable lead seemingly into the gear 
 |2|Trigger|GND|
 |3|Motor|VCC|
 |4|Motor|GND|
-|5|Rotary Sensor|Output(14 triggers per revolution)|
-|6|Rotary Sensor|GND|
-|7|Rotary Sensor|Output (1 trigger per revolution)|
+|5|Rotary Sensor|Output (14 triggers per revolution)|
+|6|Rotary Sensor|Output (1 trigger per revolution)|
+|7|Rotary Sensor|VCC|
 |8|Rotary Sensor|Output (14 triggers per revolution, offset by 1/28)|
 
 
 ## Step Five: Hack it!
 
 The next step with the printing calculator was to hook it all up to an Arduino uno.
+I hooked it up using the wiring diagram shown below
+
+![alt text][breadboard1]
