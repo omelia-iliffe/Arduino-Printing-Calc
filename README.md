@@ -1,7 +1,7 @@
 
 
 
-[breadboard1]:Arduino-Printing-Calc/Docs/img/breadboard1.png "breadboard1"
+[breadboard1]:../Docs/img/breadboard1.png "breadboard1"
 
 
 # Arduino-Printing-Calc
