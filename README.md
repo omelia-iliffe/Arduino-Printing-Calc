@@ -1,7 +1,7 @@
 
 
 
-[breadboard1]:../Docs/img/breadboard1.png "breadboard1"
+[breadboard1]:https://github.com/harryiliffe/Arduino-Printing-Calc/blob/master/Docs/img/breadboard1.png "breadboard1"
 
 
 # Arduino-Printing-Calc
@@ -81,7 +81,29 @@ Finally the most puzzling pins on the ribbon cable lead seemingly into the gear 
 
 ## Step Five: Hack it!
 
+### Wiring it up
+
 The next step with the printing calculator was to hook it all up to an Arduino uno.
 I hooked it up using the wiring diagram shown below
 
 ![alt text][breadboard1]
+
+### Coding
+
+For the code, it was basically just trial an error.
+
+I knew that reading from the rotary sensor was going to be important for printing characters correctly so I put each character on the reel in a string.
+
+I figured out (after a lot of playing around), that if you powered the trigger motor for 30 milli seconds it would write a character and move along one space. Also if you pulsed the trigger for upwards from 100 milli seconds it would write the character it was on and than return to a new line.
+
+I began writing the code and figuring out the functions I needed.
+
+The way you use the final code is by using the function printChar() and printStr()
+These to functions allow you to print a single char or a string of characters
+
+
+## Things still to do
+
+1. Make the code into a library
+2. Make a beautiful housing for the Printing Calculator
+3. Better documentation?
