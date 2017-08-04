@@ -38,6 +38,7 @@ After it is in as many pieces as possible, carefully examine each piece. Determi
 In relation to the printing calculator, there were not many pieces at all.
 
 Piece | Function
+--- | ---
 Top Plastic Shell | Incases and holds buttons, and lcd display
 Button Membrane | Made of silicon, Allows for input into the calculator
 LCD Screen | Attached to main circuit board, display calculator output
