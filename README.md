@@ -61,16 +61,16 @@ This is used to identify which character the reels of characters is on.
 
 Finally the most puzzling pins on the ribbon cable lead seemingly into the gear system. I used the variable power supply to run 5v through them whilst powering the motor and discovered that it was triggering something near the reel of characters and making clicking noises. I concluded that it was a small motor that triggered a hammer to type a character.
 
-|Wire Number|Usage|
-|---|---|
-|1|Trigger: VCC|
-|2|Trigger: GND|
-|3|Motor: VCC|
-|4|Motor: GND|
-|5|Rotary Sensor: 14 triggers per revolution|
-|6|Rotary Sensor: GND|
-|7|Rotary Sensor: 1 trigger per revolution|
-|8|Rotary Sensor: 14 triggers per revolution, offset by 1/28|
+|Wire Number|Component|Usage
+|---|---|---|
+|1|Trigger|VCC|
+|2|Trigger|GND|
+|3|Motor|VCC|
+|4|Motor|GND|
+|5|Rotary Sensor|Output(14 triggers per revolution)|
+|6|Rotary Sensor|GND|
+|7|Rotary Sensor|Output (1 trigger per revolution)|
+|8|Rotary Sensor|Output (14 triggers per revolution, offset by 1/28)|
 
 
 ## Step Five: Hack it!
